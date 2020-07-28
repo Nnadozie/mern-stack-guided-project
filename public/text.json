@@ -1,0 +1,269 @@
+{
+  "header": {
+    "menu": {
+      "en": {
+        "company": [
+          "about us",
+          "how uber works",
+          "global citizenship",
+          "newsroom",
+          "investor relations",
+          "blog",
+          "careers"
+        ],
+        "other": ["safety", "help", "covid-19 resources", "en", "products"],
+        "log in": ["driver login", "rider login"],
+        "sign up": ["sign up to drive", "sign up to ride"]
+      },
+      "fr": {},
+      "jp": {"company": [
+          "Uber について",
+          "Uber の仕組み",
+          "地球市民としての活動",
+          "ニュースルーム",
+          "IR 情報",
+          "ブログ",
+          "採用情報"
+        ],
+        "other": ["safety", "help", "covid-19 resources", "en", "products"],
+        "log in": ["driver login", "rider login"],
+        "sign up": ["sign up to drive", "sign up to ride"]}
+    }
+  },
+  "covid-notice": {
+    "heading": {
+      "en": "Coronavirus (COVID-19) resources and updates",
+      "fr": {},
+      "jp": {}
+    },
+    "body": {
+      "en": "The safety and well-being of everyone who uses Uber is always our priority. We are actively monitoring the coronavirus (COVID-19) situation and are taking steps to help keep our communities safe. Click here for more information.",
+      "fr": {},
+      "jp": {}
+    }
+  },
+  "hero": {
+    "ride": {
+      "heading": { "en": "request a ride now", "fr": {}, "jp": {} },
+      "placeholders": {
+        "en": ["enter a pickup location", "enter destination"],
+        "fr": {},
+        "jp": {}
+      },
+      "buttons": {
+        "en": ["request now", "schedule for later"],
+        "fr": {},
+        "jp": {}
+      }
+    },
+    "eat": {
+      "heading": { "en": "discover delicious eats", "fr": {}, "jp": {} },
+      "sub-heading": {
+        "en": "Order delivery from restaurants you love.",
+        "fr": {},
+        "jp": {}
+      },
+      "buttons": { "en": ["order now"], "fr": {}, "jp": {} },
+      "links": {
+        "en": ["Own a restaurant? Partner with Uber Eats"],
+        "fr": {},
+        "jp": {}
+      }
+    },
+    "freight": {
+      "heading": { "en": "A new direction for freight", "fr": {}, "jp": {} },
+      "sub-heading": {
+        "en": "Greater transparency for shippers and carriers to do business together.",
+        "fr": {},
+        "jp": {}
+      },
+      "buttons": { "en": ["get shipper details"], "fr": {}, "jp": {} },
+      "links": { "en": ["sign up to be a carrier"], "fr": {}, "jp": {} }
+    },
+    "business": {
+      "heading": {
+        "en": "Move your teams and employees",
+        "fr": {},
+        "jp": {}
+      },
+      "sub-heading": {
+        "en": "Uber for Business helps to simplify business travel, expensing, and customer experiences.",
+        "fr": {},
+        "jp": {}
+      },
+      "buttons": { "en": ["learn more"], "fr": {}, "jp": {} }
+    },
+    "transit": {
+      "heading": {
+        "en": "empowering public transportation",
+        "fr": {},
+        "jp": {}
+      },
+      "sub-heading": {
+        "en": "Uber’s software and transit solutions help local agencies build the best ways to move their communities forward.",
+        "fr": {},
+        "jp": {}
+      },
+      "buttons": { "en": ["learn more"], "fr": {}, "jp": {} }
+    },
+    "bike & scoot": {
+      "heading": {
+        "en": "bike or scoot there",
+        "fr": {},
+        "jp": {}
+      },
+      "sub-heading": {
+        "en": "Go farther and have more fun with electric bikes and scooters.",
+        "fr": {},
+        "jp": {}
+      },
+      "buttons": { "en": ["get a ride"], "fr": {}, "jp": {} }
+    },
+    "elevate": {
+      "heading": {
+        "en": "ridesharing at new heights",
+        "fr": {},
+        "jp": {}
+      },
+      "sub-heading": {
+        "en": "Building the future of transportation with urban aerial ridesharing.",
+        "fr": {},
+        "jp": {}
+      },
+      "buttons": { "en": ["learn more"], "fr": {}, "jp": {} }
+    }
+  },
+  "cities": {
+    "heading": {
+      "en": "setting 900+ cities in motion",
+      "fr": {},
+      "jp": {}
+    },
+    "links": {
+      "en": ["view all cities"],
+      "fr": {},
+      "jp": {}
+    }
+  },
+  "business": {
+    "heading": {
+      "en": "uber for business",
+      "fr": {},
+      "jp": {}
+    },
+    "sub-heading": {
+      "en": "the power of uber in everyday business",
+      "fr": {},
+      "jp": {}
+    },
+    "sub-sections": {
+      "work meals": {
+        "body": {
+          "en": "Delight your employees with their favorite meals delivered directly to anywhere they work.",
+          "fr": {},
+          "jp": {}
+        },
+        "links": { "en": ["learn more"], "fr": {}, "jp": {} }
+      },
+      "employee rides": {
+        "body": {
+          "en": "Take the work out of work-related trips. Create ground travel and commute programs for employees.",
+          "fr": {},
+          "jp": {}
+        },
+        "links": { "en": ["learn more"], "fr": {}, "jp": {} }
+      },
+      "courtesy rides": {
+        "body": {
+          "en": "Aim to impress. Arrange door-to-door rides for your customers, clients, and guests.",
+          "fr": {},
+          "jp": {}
+        },
+        "links": { "en": ["learn more"], "fr": {}, "jp": {} }
+      }
+    }
+  },
+  "safety": {
+    "heading": {
+      "en": "our commitment to your safety",
+      "fr": {},
+      "jp": {}
+    },
+    "body": {
+      "en": "With every safety feature we add and every standard in our Community Guidelines we uphold, we're committed to working to create a safe environment for our users.",
+      "fr": {},
+      "jp": {}
+    },
+    "links": {
+      "en": [
+        "Learn more about our Community Guidelines",
+        "See all safety features"
+      ],
+      "fr": {},
+      "jp": {}
+    }
+  },
+  "about": {
+    "sub-sections": {
+      "about us": {
+        "body": {
+          "en": "Find out how we started, what drives us, and how we’re igniting opportunity.",
+          "fr": {},
+          "jp": {}
+        },
+        "links": { "en": ["learn more"], "fr": {}, "jp": {} }
+      },
+      "newsroom": {
+        "body": {
+          "en": "See announcements about our latest releases, initiatives, and partnerships.",
+          "fr": {},
+          "jp": {}
+        },
+        "links": { "en": ["learn more"], "fr": {}, "jp": {} }
+      },
+      "global citizenship": {
+        "body": {
+          "en": "Read about our commitment to making a positive impact in the cities we serve.",
+          "fr": {},
+          "jp": {}
+        },
+        "links": { "en": ["learn more"], "fr": {}, "jp": {} }
+      }
+    }
+  },
+  "cta": {
+    "links": {
+      "en": ["sign up to drive", "sign up to ride"],
+      "fr": {},
+      "jp": {}
+    }
+  },
+  "footer": {
+    "uber": { "en": "uber", "fr": {}, "jp": {} },
+    "visit help center": { "en": "visit help center", "fr": {}, "jp": {} },
+    "company": {
+      "en": ["about us", "newsroom", "investors", "blog", "careers"],
+      "fr": {},
+      "jp": {}
+    },
+    "products": {
+      "en": ["ride", "drive", "eat", "uber for business", "uber freight"],
+      "fr": {},
+      "jp": {}
+    },
+    "global citizenship": {
+      "en": ["safety", "diversity", "transparency"],
+      "fr": {},
+      "jp": {}
+    },
+    "innovation": {
+      "en": ["atg", "ai", "elevate"],
+      "fr": {},
+      "jp": {}
+    },
+    "copyright": { "en": "© 2020 Uber Technologies Inc.", "fr": {}, "jp": {} },
+    "privacy": { "en": "privacy", "fr": {}, "jp": {} },
+    "accesibility": { "en": "accessibility", "fr": {}, "jp": {} },
+    "terms": { "en": "terms", "fr": {}, "jp": {} }
+  }
+}
