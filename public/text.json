@@ -1,33 +1,93 @@
 {
   "header": {
     "menu": {
-      "en": {
-        "company": [
-          "about us",
-          "how uber works",
-          "global citizenship",
-          "newsroom",
-          "investor relations",
-          "blog",
-          "careers"
-        ],
-        "other": ["safety", "help", "covid-19 resources", "en", "products"],
-        "log in": ["driver login", "rider login"],
-        "sign up": ["sign up to drive", "sign up to ride"]
+      "company": {
+        "button": {
+          "en": "company",
+          "fr": "",
+          "jp": "会社情報"
+        },
+        "links": {
+          "en": [
+            "about us",
+            "how uber works",
+            "global citizenship",
+            "newsroom",
+            "investor relations",
+            "blog",
+            "careers"
+          ],
+          "fr": [],
+          "jp": [
+            "Uber について",
+            "Uber の仕組み",
+            "地球市民としての活動",
+            "ニュースルーム",
+            "IR 情報",
+            "ブログ",
+            "採用情報"
+          ]
+        }
       },
-      "fr": {},
-      "jp": {"company": [
-          "Uber について",
-          "Uber の仕組み",
-          "地球市民としての活動",
-          "ニュースルーム",
-          "IR 情報",
-          "ブログ",
-          "採用情報"
-        ],
-        "other": ["safety", "help", "covid-19 resources", "en", "products"],
-        "log in": ["driver login", "rider login"],
-        "sign up": ["sign up to drive", "sign up to ride"]}
+      "safety": {
+        "button": {
+          "en": "safety",
+          "fr": "",
+          "jp": "安全性"
+        }
+      },
+      "help": {
+        "button": {
+          "en": "help",
+          "fr": "",
+          "jp": "ヘルプ"
+        }
+      },
+      "covid-19 resources": {
+        "button": {
+          "en": "covid-19 resources",
+          "fr": "",
+          "jp": "新型コロナウイルス感染症 (COVID-19) の参考資料"
+        }
+      },
+      "en": {
+        "button": {
+          "en": "en",
+          "fr": "",
+          "jp": "JA-JP"
+        }
+      },
+      "products": {
+        "button": {
+          "en": "products",
+          "fr": "",
+          "jp": "サービス"
+        }
+      },
+      "log in": {
+        "button": {
+          "en": "log in",
+          "fr": "",
+          "jp": "ログイン"
+        },
+        "sub-buttons": {
+          "en": ["driver login", "rider login"],
+          "fr": "",
+          "jp": ["ドライバーとしてログイン", "ユーザーとしてログイン"]
+        }
+      },
+      "sign up": {
+        "button": {
+          "en": "sign up",
+          "fr": "",
+          "jp": "登録する"
+        },
+        "sub-buttons": {
+          "en": ["sign up to drive", "sign up to ride"],
+          "fr": [],
+          "jp": ["ドライバーとして登録", "登録して乗車"]
+        }
+      }
     }
   },
   "covid-notice": {
