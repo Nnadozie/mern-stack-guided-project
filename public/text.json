@@ -4,7 +4,7 @@
       "company": {
         "button": {
           "en": "company",
-          "fr": "",
+
           "jp": "会社情報"
         },
         "links": {
@@ -17,7 +17,7 @@
             "blog",
             "careers"
           ],
-          "fr": [],
+
           "jp": [
             "Uber について",
             "Uber の仕組み",
@@ -32,59 +32,59 @@
       "safety": {
         "button": {
           "en": "safety",
-          "fr": "",
+
           "jp": "安全性"
         }
       },
       "help": {
         "button": {
           "en": "help",
-          "fr": "",
+
           "jp": "ヘルプ"
         }
       },
       "covid-19 resources": {
         "button": {
           "en": "covid-19 resources",
-          "fr": "",
+
           "jp": "新型コロナウイルス感染症 (COVID-19) の参考資料"
         }
       },
       "en": {
         "button": {
           "en": "en",
-          "fr": "",
+
           "jp": "JA-JP"
         }
       },
       "products": {
         "button": {
           "en": "products",
-          "fr": "",
+
           "jp": "サービス"
         }
       },
       "log in": {
         "button": {
           "en": "log in",
-          "fr": "",
+
           "jp": "ログイン"
         },
         "sub-buttons": {
           "en": ["driver login", "rider login"],
-          "fr": "",
+
           "jp": ["ドライバーとしてログイン", "ユーザーとしてログイン"]
         }
       },
       "sign up": {
         "button": {
           "en": "sign up",
-          "fr": "",
+
           "jp": "登録する"
         },
         "sub-buttons": {
           "en": ["sign up to drive", "sign up to ride"],
-          "fr": [],
+
           "jp": ["ドライバーとして登録", "登録して乗車"]
         }
       }
@@ -93,237 +93,388 @@
   "covid-notice": {
     "heading": {
       "en": "Coronavirus (COVID-19) resources and updates",
-      "fr": {},
-      "jp": {}
+
+      "jp": "新型コロナウイルス感染症 (COVID-19) について"
     },
     "body": {
       "en": "The safety and well-being of everyone who uses Uber is always our priority. We are actively monitoring the coronavirus (COVID-19) situation and are taking steps to help keep our communities safe. Click here for more information.",
-      "fr": {},
-      "jp": {}
+
+      "jp": "Uber は、サービスを利用する皆様の安全と健康を常に重視しています。コミュニティの安全を守るため、新型コロナウイルス感染症 (COVID-19) の感染状況を注視し、対策を講じています。 詳細については、こちらをクリックしてください。"
     }
   },
   "hero": {
+    "earn": {
+      "button": {
+        "en": "earn",
+
+        "jp": "収入を得る"
+      },
+      "heading": {
+        "en": "Get in the driver's seat and get paid",
+
+        "jp": "運転して収入を得る"
+      },
+      "sub-heading": {
+        "en": "Drive on the platform with the largest network of active riders.",
+
+        "jp": "ユーザー登録済みの乗客が利用している最大規模のネットワークを備えたプラットフォームで運転してください。"
+      },
+      "buttons": {
+        "en": ["sign up to drive", "learn more about driving and delivering"],
+
+        "jp": ["ドライバーとして登録", "運転と配達についての詳細はこちら"]
+      }
+    },
     "ride": {
-      "heading": { "en": "request a ride now", "fr": {}, "jp": {} },
+      "button": {
+        "en": "ride",
+
+        "jp": "乗車する"
+      },
+      "heading": {
+        "en": "request a ride now",
+
+        "jp": "今すぐ配車をリクエスト"
+      },
       "placeholders": {
         "en": ["enter a pickup location", "enter destination"],
-        "fr": {},
-        "jp": {}
+
+        "jp": ["乗車場所を入力してください", "目的地を入力"]
       },
       "buttons": {
         "en": ["request now", "schedule for later"],
-        "fr": {},
-        "jp": {}
+
+        "jp": ["すぐに依頼", "事前配車を依頼"]
       }
     },
     "eat": {
-      "heading": { "en": "discover delicious eats", "fr": {}, "jp": {} },
+      "button": {
+        "en": "eat",
+
+        "jp": "料理を注文する"
+      },
+      "heading": {
+        "en": "Discover delicious eats",
+
+        "jp": "おいしい料理を発見しましょう"
+      },
       "sub-heading": {
         "en": "Order delivery from restaurants you love.",
-        "fr": {},
-        "jp": {}
+
+        "jp": "お気に入りのレストランから料理を配達してもらいましょう。"
       },
-      "buttons": { "en": ["order now"], "fr": {}, "jp": {} },
+      "buttons": { "en": ["order now"], "jp": ["注文する"] },
       "links": {
         "en": ["Own a restaurant? Partner with Uber Eats"],
-        "fr": {},
-        "jp": {}
+
+        "jp": ["レストランのオーナーの方へUber Eats との提携"]
       }
     },
     "freight": {
-      "heading": { "en": "A new direction for freight", "fr": {}, "jp": {} },
+      "button": {
+        "en": "frieght",
+
+        "jp": "貨物輸送"
+      },
+      "heading": {
+        "en": "A new direction for freight",
+
+        "jp": "貨物輸送の新たなソリューション"
+      },
       "sub-heading": {
         "en": "Greater transparency for shippers and carriers to do business together.",
-        "fr": {},
-        "jp": {}
+
+        "jp": "発送者と輸送業者との業務提携の透明性を高めます"
       },
-      "buttons": { "en": ["get shipper details"], "fr": {}, "jp": {} },
-      "links": { "en": ["sign up to be a carrier"], "fr": {}, "jp": {} }
+      "buttons": {
+        "en": ["get shipper details"],
+
+        "jp": ["発送者の詳細を見る"]
+      },
+      "links": {
+        "en": ["sign up to be a carrier"],
+
+        "jp": ["輸送業者として登録する"]
+      }
     },
     "business": {
+      "button": {
+        "en": "business",
+
+        "jp": "ビジネス"
+      },
       "heading": {
         "en": "Move your teams and employees",
-        "fr": {},
-        "jp": {}
+
+        "jp": "チームと従業員の移動"
       },
       "sub-heading": {
         "en": "Uber for Business helps to simplify business travel, expensing, and customer experiences.",
-        "fr": {},
-        "jp": {}
+
+        "jp": "ビジネス用 Uber で出張や経費管理、顧客サービスがさらにシンプルになります。"
       },
-      "buttons": { "en": ["learn more"], "fr": {}, "jp": {} }
+      "buttons": { "en": ["learn more"], "jp": ["詳細はこちら"] }
     },
     "transit": {
+      "button": {
+        "en": "transit",
+
+        "jp": "トランジット"
+      },
       "heading": {
         "en": "empowering public transportation",
-        "fr": {},
-        "jp": {}
+
+        "jp": "公共交通機関の機能強化"
       },
       "sub-heading": {
         "en": "Uber’s software and transit solutions help local agencies build the best ways to move their communities forward.",
-        "fr": {},
-        "jp": {}
+
+        "jp": "Uber のソフトウェアと輸送ソリューションは、地域の交通機関による効率的な移動手段の提供をサポートします。"
       },
-      "buttons": { "en": ["learn more"], "fr": {}, "jp": {} }
+      "buttons": { "en": ["learn more"], "jp": ["詳細はこちら"] }
     },
     "bike & scoot": {
+      "button": {
+        "en": "bike and scoot",
+
+        "jp": "自転車とキック スクーター"
+      },
       "heading": {
         "en": "bike or scoot there",
-        "fr": {},
-        "jp": {}
+
+        "jp": "自転車やスクーターで移動"
       },
       "sub-heading": {
         "en": "Go farther and have more fun with electric bikes and scooters.",
-        "fr": {},
-        "jp": {}
+
+        "jp": "電動自転車やキック スクーターで気軽に出かけましょう。"
       },
-      "buttons": { "en": ["get a ride"], "fr": {}, "jp": {} }
+      "buttons": { "en": ["get a ride"], "jp": ["レンタルを利用"] }
     },
     "elevate": {
+      "button": {
+        "en": "elevate",
+
+        "jp": "Elevate"
+      },
       "heading": {
         "en": "ridesharing at new heights",
-        "fr": {},
-        "jp": {}
+
+        "jp": "ライドシェアの新しい地平"
       },
       "sub-heading": {
         "en": "Building the future of transportation with urban aerial ridesharing.",
-        "fr": {},
-        "jp": {}
+
+        "jp": "都市の空のライドシェアで未来の交通システムを築きます。"
       },
-      "buttons": { "en": ["learn more"], "fr": {}, "jp": {} }
+      "buttons": { "en": ["learn more"], "jp": ["詳細はこちら"] }
     }
   },
   "cities": {
     "heading": {
       "en": "setting 900+ cities in motion",
-      "fr": {},
-      "jp": {}
+
+      "jp": "900 を超える都市を動かす"
     },
     "links": {
       "en": ["view all cities"],
-      "fr": {},
-      "jp": {}
+
+      "jp": ["すべての都市を表示"]
     }
   },
   "business": {
     "heading": {
       "en": "uber for business",
-      "fr": {},
-      "jp": {}
+
+      "jp": "ビジネス用 Uber"
     },
     "sub-heading": {
       "en": "the power of uber in everyday business",
-      "fr": {},
-      "jp": {}
+
+      "jp": "日々の業務をサポートする Uber の利便性"
     },
     "sub-sections": {
       "work meals": {
+        "heading": {
+          "en": "work meals",
+
+          "jp": "ビジネスでの食事"
+        },
         "body": {
           "en": "Delight your employees with their favorite meals delivered directly to anywhere they work.",
-          "fr": {},
-          "jp": {}
+
+          "jp": "どこでも、社員の方々がそれぞれ働いていらしゃる場所にお好みの料理を直接お届けできます。きっと喜んでいただけます。"
         },
-        "links": { "en": ["learn more"], "fr": {}, "jp": {} }
+        "links": { "en": ["learn more"], "jp": ["詳細はこちら"] }
       },
       "employee rides": {
+        "heading": {
+          "en": "employee rides",
+
+          "jp": "従業員の乗車"
+        },
         "body": {
           "en": "Take the work out of work-related trips. Create ground travel and commute programs for employees.",
-          "fr": {},
-          "jp": {}
+
+          "jp": "仕事に関連する乗車の経費精算業務を効率化します。従業員のための  陸上交通および通勤プログラムを作成しましょう。"
         },
-        "links": { "en": ["learn more"], "fr": {}, "jp": {} }
+        "links": { "en": ["learn more"], "jp": "詳細はこちら" }
       },
       "courtesy rides": {
+        "heading": {
+          "en": "courtesy rides",
+
+          "jp": "顧客サービス"
+        },
         "body": {
           "en": "Aim to impress. Arrange door-to-door rides for your customers, clients, and guests.",
-          "fr": {},
-          "jp": {}
+
+          "jp": "好印象を残しましょう。顧客やクライアント、ゲストのためにドアツードアのご乗車を手配できます"
         },
-        "links": { "en": ["learn more"], "fr": {}, "jp": {} }
+        "links": { "en": ["learn more"], "jp": ["詳細はこちら"] }
       }
     }
   },
   "safety": {
     "heading": {
       "en": "our commitment to your safety",
-      "fr": {},
-      "jp": {}
+
+      "jp": "安全性向上への取り組み"
     },
     "body": {
       "en": "With every safety feature we add and every standard in our Community Guidelines we uphold, we're committed to working to create a safe environment for our users.",
-      "fr": {},
-      "jp": {}
+
+      "jp": "安全性の向上に向けて新たに導入される機能、コミュニティ ガイドラインの基準の 1 つひとつに、利用者にとって安全な環境の確保に取り組む Uber の信念が込められています。"
     },
     "links": {
       "en": [
         "Learn more about our Community Guidelines",
         "See all safety features"
       ],
-      "fr": {},
-      "jp": {}
+
+      "jp": [
+        "コミュニティ ガイドラインの詳細はこちら",
+        "安全を守るすべての機能を見る"
+      ]
     }
   },
   "about": {
     "sub-sections": {
       "about us": {
+        "heading": {
+          "en": "About us",
+
+          "jp": "Uber について"
+        },
         "body": {
           "en": "Find out how we started, what drives us, and how we’re igniting opportunity.",
-          "fr": {},
+
           "jp": {}
         },
-        "links": { "en": ["learn more"], "fr": {}, "jp": {} }
+        "links": { "en": ["learn more"], "jp": ["詳細はこちら"] }
       },
       "newsroom": {
+        "heading": {
+          "en": "newsroom",
+
+          "jp": "ニュースルーム"
+        },
         "body": {
           "en": "See announcements about our latest releases, initiatives, and partnerships.",
-          "fr": {},
-          "jp": {}
+
+          "jp": "最新情報、イニシアチブ、パートナーシップに関する発表をご覧いただけます。"
         },
-        "links": { "en": ["learn more"], "fr": {}, "jp": {} }
+        "links": { "en": ["learn more"], "jp": ["詳細はこちら"] }
       },
       "global citizenship": {
+        "heading": {
+          "en": "global citizenship",
+
+          "jp": "地球市民としての活動"
+        },
         "body": {
           "en": "Read about our commitment to making a positive impact in the cities we serve.",
-          "fr": {},
-          "jp": {}
+
+          "jp": "サービスを展開する都市にプラスの影響をもたらす Uber の取り組みをご紹介します。"
         },
-        "links": { "en": ["learn more"], "fr": {}, "jp": {} }
+        "links": { "en": ["learn more"], "jp": ["詳細はこちら"] }
       }
     }
   },
   "cta": {
     "links": {
       "en": ["sign up to drive", "sign up to ride"],
-      "fr": {},
-      "jp": {}
+
+      "jp": ["ドライバーとして登録", "登録して乗車"]
     }
   },
   "footer": {
-    "uber": { "en": "uber", "fr": {}, "jp": {} },
-    "visit help center": { "en": "visit help center", "fr": {}, "jp": {} },
+    "uber": { "en": "uber", "jp": "uber" },
+    "visit help center": {
+      "en": "visit help center",
+
+      "jp": "ヘルプ センターに移動"
+    },
     "company": {
-      "en": ["about us", "newsroom", "investors", "blog", "careers"],
-      "fr": {},
-      "jp": {}
+      "heading": {
+        "en": "company",
+
+        "jp": "会社情報"
+      },
+      "links": {
+        "en": ["about us", "newsroom", "investors", "blog", "careers"],
+
+        "jp": [
+          "Uber について",
+          "ニュースルーム",
+          "IR 情報",
+          "ブログ",
+          "採用情報"
+        ]
+      }
     },
     "products": {
+      "heading": {
+        "en": "products",
+
+        "jp": "サービス"
+      },
       "en": ["ride", "drive", "eat", "uber for business", "uber freight"],
-      "fr": {},
-      "jp": {}
+
+      "jp": [
+        "乗車する",
+        "ドライバーになる",
+        "料理を注文する",
+        "ビジネス用 Uber",
+        "Uber Freight"
+      ]
     },
     "global citizenship": {
+      "heading": {
+        "en": "global citizenship",
+
+        "jp": "地球市民としての活動"
+      },
       "en": ["safety", "diversity", "transparency"],
-      "fr": {},
-      "jp": {}
+
+      "jp": ["安全性", "多様性", "透明性"]
     },
     "innovation": {
+      "heading": {
+        "en": "innovation",
+
+        "jp": "イノベーション"
+      },
       "en": ["atg", "ai", "elevate"],
-      "fr": {},
-      "jp": {}
+
+      "jp": ["atg", "ai", "elevate"]
     },
-    "copyright": { "en": "© 2020 Uber Technologies Inc.", "fr": {}, "jp": {} },
-    "privacy": { "en": "privacy", "fr": {}, "jp": {} },
-    "accesibility": { "en": "accessibility", "fr": {}, "jp": {} },
-    "terms": { "en": "terms", "fr": {}, "jp": {} }
+    "copyright": {
+      "en": "© 2020 Uber Technologies Inc.",
+      "jp": "© 2020 Uber Technologies Inc."
+    },
+    "privacy": { "en": "privacy", "jp": "プライバシー" },
+    "accesibility": { "en": "accessibility", "jp": "アクセシビリティ" },
+    "terms": { "en": "terms", "jp": "利用規約" }
   }
 }
