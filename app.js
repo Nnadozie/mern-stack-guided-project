@@ -2,53 +2,44 @@ const express = require('express');
 const path = require('path');
 const textObj = require(path.join(__dirname, '/public/text.json'));
 
-
-
 const app = express();
 const port = process.env.PORT || 3000;
 
 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/text.json'));
+  res.send(textObj);
 });
 
 
-const deleteNodes = (parent, type) => {
-
-    const keys = Object.keys(parent);
-    if (keys.includes(type)) {
-        delete parent[type];
+const selectNodes = (parent, type) => {
+  const keys = Object.keys(parent);
+  const newObj = {};
+  if (keys.includes(type) && (typeof parent[type] === 'string' || Array.isArray(parent[type]))) {
+    newObj[type] = parent[type];
+  } else {
+    if (typeof parent === 'object') {
+      keys.forEach(key => {
+        newObj[key] = selectNodes(parent[key], type);
+      });
     }
-    else {
-        keys.forEach(key => {
-            deleteNodes(parent[`${key}`], type);
-        });
-    }
-
+  }
+  return newObj;
 }
 
-app.get('/jp/ja', (req, res) => {
-    let jaObj = {};
-    if (true) {
-        let clone = JSON.parse(JSON.stringify(textObj));
-        deleteNodes(clone, "en");
-        jaObj = clone;
-    }
-    res.send(jaObj);
+const selectLanguage = (language) => {
+  const langObject = selectNodes(textObj, language);
+  return langObject;
+};
 
+app.get('/jp/ja', (req, res) => {
+  res.send(selectLanguage('ja'));
 });
 
 app.get('/ng/en', (req, res) => {
-    let enObj = {};
-    if (true) {
-        let clone = JSON.parse(JSON.stringify(textObj));
-        deleteNodes(clone, "ja");
-        enObj = clone;
-    }
-    res.send(enObj);
+  res.send(selectLanguage('en'));
 });
 
-app.listen(port, () =>{
-    console.log(`listening on port ${port}`)
+app.listen(port, () => {
+  console.log(`listening on port ${port}`)
 });
