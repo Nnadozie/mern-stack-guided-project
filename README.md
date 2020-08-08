@@ -70,6 +70,18 @@ Recommended course: Sections 1 to 4 of "Building Web Applications with Node.js a
 
 Note: when following along with courses install the versions of software used in those courses to avoid getting frustrated by incompatibility issues. You may get vulnerability warnings which you can fix using npm audit fix if you want to.
 
+<br><br><br>
+
+
+### CHALLENGE 1 Example
+* Try not to peep till you've attempted the challenge.
+* View or download on the [challenge-1 branch](https://github.com/Nnadozie/express-nodemon-starter/tree/challenge-1).
+* Time spent: 5 - 10 mins
+* Why so simple? This is a no-frills introductory guided project. Don't get bogged down by tooling and excessive set-ups. Or better yet, just think of it like a hackathon or PoC, where you have really little time to accomplish your brief.
+* Why did we do this challenge?
+* 1: we're using express to build our app. Express is one part of the popular MERN (mongodb, express, react, node) stack.
+* 2: we really do not want to have to restart our app after every code-change we make, hence nodemon.
+
 
 
 <br><br><br>
@@ -79,23 +91,11 @@ Note: when following along with courses install the versions of software used in
 
 I hope we all began our guided project by setting up our express-nodemon app.
 Now we'll be challenged to set up our endpoints. Here we go!
-Let's begin with an example solution to challenge 1.
 
-CHALLENGE 1 example solution
-
-* Please view or download on the challenge-1 branch.
-* Time spent: 5 - 10 mins
-* Why so simple? This is a no-frills introductory guided project. Let's not get bogged down by tooling and excessive set-ups. Or better yet, just think of it like a hackathon or PoC, where you have really little time to accomplish your brief.
-* Why did we do this challenge?
-* 1: we're using express to build our app. Express is one part of the popular MERN (mongodb, express, react, node) stack.
-* 2: we really do not want to have to restart our app after every code-change we make, hence nodemon.
-
-CHALLENGE 2
-
-* Create an endpoint for / I mean, localhost:8080/  hint: a get endpoint.
+* Create an endpoint for /. I mean, localhost:8080/  hint: a get endpoint.
 * Let it return anything, some text, an image, anything. The point is, get an endpoint working.
 * Then think about how many languages you want to support( I recommend just two, maybe English and Japanese)
-* Create an endpoint localhost:8080/jp/ja and another localhost:8080/ng/en that returns the Japanese and English equivalent respectively, of the text on Uber.com's hompage in JSON format.
+* Create an endpoint localhost:8080/jp/ja and another localhost:8080/ng/en, that return the Japanese and English equivalent respectively, of the text on Uber.com's hompage in JSON format.
 * NO database needed just yet. Rating: medium, because you'll need to figure out how to format the json.
 
 NOTES
@@ -111,18 +111,23 @@ We'll be rounding up with our backend endpoints over the weekend with Challenge 
 
 <br><br><br>
 
+### Challenge 2 Example
+
+* Try not to peep till you've attempted the challenge.
+* View or download on the [challenge-2 branch](https://github.com/Nnadozie/express-nodemon-starter/tree/challenge-2).
+* Deployed here to tinker with: https://uber-clone-c2.herokuapp.com/ Check out the endpoints: /, jp/ja, and ng/en. Notice anything?
+* I recommend installing this [json viewer extension](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) to easily traverse the json. 
+
+
+<br><br><br>
+
 ### Challenge 3 (Rating: Hard)
-Challenge 2 example solution is out!
-* deployed here to tinker with: https://gads-uber-clone.herokuapp.com/
-* code here: https://github.com/Nnadozie/express-nodemon-starter/tree/challenge-2
-* I recommend installing this json viewer extension to easily traverse the json: https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc
+* Estimate: 5 hours min for a beginner.
+* Set up your preferred database, either sql (postgres) or nosql (mongodb). Mongodb recommended.
+* Migrate the language text files to your db using a schema of your choice. You should have a put or post endpoint to store the language text assets in your db.
+* Update your code to fetch the language text files from your db and make sure the endpoints work just as before.
 
-Challenge 3 (rating: Hard. Estimate: about 5 hours min for a beginner)
-* set up your preferred database, either sql (postgres) or nosql (mongodb)
-* migrate the language text files to your db using a schema of your choice
-* update your code to fetch the language text files from your db and make sure the endpoints work just as before.
-
-why do this challenge?
+Why do this challenge?
 * Get familiar with databases. Every app is database -> backend code -> front-end code.
 
 Recommended course
@@ -130,12 +135,28 @@ Recommended course
 
 Note: when following along with courses, install the versions of software used in those courses to avoid getting frustrated by incompatibility issues.
 
-After challenge 3 we'll be moving on to front-end work!!
+After challenge 3 we'll be moving on to front-end work!
 
 <br><br><br>
 
+### Challenge 3 Example Solution
+
+* Try not to peep till you've attempted the challenge.
+* View or download on the [challenge-3 branch](https://github.com/Nnadozie/express-nodemon-starter/tree/challenge-3).
+* Deployed here to tinker with: https://uber-clone-c3.herokuapp.com/ Check out the endpoints: /, jp/ja, and ng/en. They should be the same as challenge 2.
+* Can you run it locally and send a put request with a payload using postman?
+
+<br><br><br>
+
+
 ### Challenge 4 (Rating: Easy)
-Loading...
+
+It's front-end time! Here's where things get exciting ^_^, and also a good time to start brushing up on your CSS!
+
+* Create a view using a template engine of your choice. I recommend [EJS](https://ejs.co/).
+* Let it display any valid html of your choice on localhost:8080/
+
+Recommended course: Sections 1 to 4 of "Building Web Applications with Node.js and Express 4.0 (UPDATE)" https://app.pluralsight.com/library/courses/c76a348d-4fa2-4925-ae8c-d66edba14b75
 
 <br><br><br>
 
