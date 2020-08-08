@@ -11,10 +11,10 @@ It was meant to pass time during the lull between phase I and phase II of the GA
 * Assume a translator was employed to translate the text into different languages and provided you the output in txt format.
 
 
-* You have to be able to save and update this text to a dB (either mongodb or postgres) using post requests.
+* You have to be able to save and update this text to a dB (either mongodb or postgres) using post or put requests.
 
 
-* The text must be retrieved using get requests in JSON format and used to populate the homepage.
+* The text must be retrieved using get requests, in JSON format and used to populate the homepage.
 
 
 * There can be no hard-coded text on the homepage.
