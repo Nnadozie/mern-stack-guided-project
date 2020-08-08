@@ -41,7 +41,7 @@ app.get('/:collection', (req, res) => {
             const db = (await client).db(dbName);
             const col = await db.collection(collection.toString());
             const text = await col.findOne()
-            res.send(text);
+            res.json(text);
         } catch (error) {
             res.send(error);
         }
@@ -59,7 +59,7 @@ app.get('/:collection/:language', (req, res) => {
             const db = (await client).db(dbName);
             const col = await db.collection(collection.toString());
             const text = await col.findOne()
-            res.send(selectLanguage(text, language))
+            res.json(selectLanguage(text, language))
         } catch (error) {
             res.send(error);
             console.log(error);
