@@ -153,7 +153,7 @@ After challenge 3 we'll be moving on to front-end work!
 
 It's front-end time! Here's where things get exciting ^_^, and also a good time to start brushing up on your CSS!
 
-* Create a view using a template engine of your choice. I recommend [EJS](https://ejs.co/).
+* Create a view in your express app using a template engine of your choice. I recommend [EJS](https://ejs.co/).
 * Let it display any valid html of your choice on localhost:8080/
 
 Recommended course: Sections 1 to 4 of "Building Web Applications with Node.js and Express 4.0 (UPDATE)" https://app.pluralsight.com/library/courses/c76a348d-4fa2-4925-ae8c-d66edba14b75
