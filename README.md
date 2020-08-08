@@ -1,5 +1,4 @@
-This is a GADS guided project supported by [@manimanis](https://github.com/manimanis) and [@nnadozie](https://github.com/Nnadozie).
-It was meant to pass time during the lull between phase I and phase II of the GADS2020 program and is best suited for beginners to express.
+This is a GADS guided project supported by [@manimanis](https://github.com/manimanis) and [@nnadozie](https://github.com/Nnadozie), and open to more example solutions and course recommendations from mentors.
 
 ![Uber Clone](https://media.giphy.com/media/iDgizRDKB7Ghgdlbb1/giphy.gif)
 
@@ -29,11 +28,12 @@ Here's what to expect:
 
 * We'll be using an example, challenge structure.
 
+* Note: the examples are in no way ideal solutions, but they are intentionally barebone for easy comprehension.
 
 * That is. It's structured as a series of small-sized challenges, and you'll be given examples along with the challenges.
 
 
-* I hope this will prompt us to ask questions and figure a lot of things out on our own.
+* I hope this will prompt learners to ask questions and figure out a lot of things on your own.
 
 
 * We're starting with backend challenges, before moving to the front end.
@@ -82,6 +82,7 @@ Note: when following along with courses install the versions of software used in
 * 1: we're using express to build our app. Express is one part of the popular MERN (mongodb, express, react, node) stack.
 * 2: we really do not want to have to restart our app after every code-change we make, hence nodemon.
 
+*NOTE: PRs with new examples are more than welcome.
 
 
 <br><br><br>
@@ -118,6 +119,7 @@ We'll be rounding up with our backend endpoints over the weekend with Challenge 
 * Deployed here to tinker with: https://uber-clone-c2.herokuapp.com/ Check out the endpoints: /, jp/ja, and ng/en. Notice anything?
 * I recommend installing this [json viewer extension](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) to easily traverse the json. 
 
+*NOTE: PRs with new examples are more than welcome.
 
 <br><br><br>
 
@@ -143,22 +145,30 @@ After challenge 3 we'll be moving on to front-end work!
 
 * Try not to peep till you've attempted the challenge.
 * View or download on the [challenge-3 branch](https://github.com/Nnadozie/express-nodemon-starter/tree/challenge-3).
-* Deployed here to tinker with: https://uber-clone-c3.herokuapp.com/ Check out the endpoints: jp/ja, and ng/en. They should be the same as challenge 2.
-* There's a new endpoint /intl, that takes over from / as it was implemented in the challenge 2 example.
+* Deployed here to tinker with: https://uber-clone-c3.herokuapp.com/intl Check out the endpoints: /jp/ja, and /ng/en. They should be the same as challenge 2.
+* There's a new endpoint /intl, that takes over from /.
 * Can you run it locally and send a put request to /intl with your textfile content as the payload using postman?
+
+*NOTE: PRs with new examples are more than welcome.
 
 #### Using the APIs to populate the DB
 
-Before
+Before.
+
+Checking get /intl, /jp/ja, and /ng/en to see the dB is empty.
 
 ![Uber Clone](https://media.giphy.com/media/U3t1Sd00wXx3Ad21NN/giphy.gif)
 
 During
 
+Using put requests to /intl, /jp and /ng to populate the dB.
+
 ![Uber Clone](https://media.giphy.com/media/JqK0DzZ9OVS8hoIZqJ/giphy.gif)
 ![Uber Clone](https://media.giphy.com/media/dwLx5k7SdrguKOrMot/giphy.gif)
 
 After
+
+Checking that the resources were correctly created.
 
 ![Uber Clone](https://media.giphy.com/media/mGWPzh2RjcSgJ6V2y3/giphy.gif)
 
