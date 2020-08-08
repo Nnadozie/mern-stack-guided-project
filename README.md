@@ -120,7 +120,7 @@ Challenge 2 example solution is out!
 Challenge 3 (rating: Hard. Estimate: about 5 hours min for a beginner)
 * set up your preferred database, either sql (postgres) or nosql (mongodb)
 * migrate the language text files to your db using a schema of your choice
-* update your code to fetch the language text files from your dp and make sure the endpoints work just as before.
+* update your code to fetch the language text files from your db and make sure the endpoints work just as before.
 
 why do this challenge?
 * Get familiar with databases. Every app is database -> backend code -> front-end code.
