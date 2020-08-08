@@ -147,6 +147,21 @@ After challenge 3 we'll be moving on to front-end work!
 * There's a new endpoint /intl, that takes over from / as it was implemented in the challenge 2 example.
 * Can you run it locally and send a put request to /intl with your textfile content as the payload using postman?
 
+#### Using the APIs to populate the DB
+
+Before
+
+![Uber Clone](https://media.giphy.com/media/U3t1Sd00wXx3Ad21NN/giphy.gif)
+
+During
+
+![Uber Clone](https://media.giphy.com/media/JqK0DzZ9OVS8hoIZqJ/giphy.gif)
+![Uber Clone](https://media.giphy.com/media/dwLx5k7SdrguKOrMot/giphy.gif)
+
+After
+
+![Uber Clone](https://media.giphy.com/media/mGWPzh2RjcSgJ6V2y3/giphy.gif)
+
 <br><br><br>
 
 
