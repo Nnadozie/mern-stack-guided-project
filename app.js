@@ -5,7 +5,7 @@ const selectLanguage = require('./utilities/selectLanguage');
 
 const app = express();
 const port = process.env.PORT || 3000;
-const url = "mongodb+srv://admin:57VpzmLLKHAGdJD@uberclone.1g6uu.mongodb.net/uberCloneDb?retryWrites=true&w=majority";
+const url = "mongodb://localhost:27017";
 const dbName = 'uberCloneDb';
 
 
