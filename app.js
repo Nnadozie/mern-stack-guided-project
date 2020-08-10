@@ -14,51 +14,46 @@ const { URL, DBNAME } = require('./utilities/dbSettings');
 
 
 app.use(express.json());
-app.put('/:collection', (req, res) => {
-  const payload = req.body;
-  const { collection } = req.params;
-
-  (async function mongo() {
-
-    let client = new MongoClient(URL, { useNewUrlParser: true });
-    try {
-      client = MongoClient.connect(URL);
-      const db = (await client).db(DBNAME);
-      const col = await db.collection(collection.toString());
-      await col.deleteMany();
-      const response = await col.insertOne(payload);
-      res.status(201).json(response)
-    } catch (error) {
-      res.send(error);
-    }
-    (await client).close();
-  })();
-});
 
 app.get('/:collection', (req, res) => {
   const { collection } = req.params;
 
   mng.connect()
-    .then(() => mng.connObj.db.collection(collection))
+    .then(() => {
+      // User can only fetch from existing collections
+      if (mng.connObj.collections.includes(collection)) {
+        return collection;
+      }
+      throw new Error(`There is no '${collection}' collection found.`);
+    })
+    .then(collection => mng.connObj.db.collection(collection))
     .then(col => col.findOne())
     .then(text => res.json(text))
     .catch(err => {
-      console.log(err);
       mng.close();
+      res.json({ ok: false, error: err.toString() });
     });
 });
 
 app.get('/:collection/:language', (req, res) => {
-  console.log('/:collection:language');
   const { collection, language } = req.params;
 
   mng.connect()
-    .then(() => mng.connObj.db.collection(collection))
+    .then(() => {
+      console.log(mng.connObj.collections);
+      // User can only fetch from existing collections
+      if (mng.connObj.collections.includes(collection)) {
+        return collection;
+      }
+      throw new Error(`There is no '${collection}' collection found.`);
+    })
+    .then(collection => mng.connObj.db.collection(collection))
     .then(col => col.findOne())
     .then(text => selectLanguage(text, language))
+    .then(text => res.json(text))
     .catch(err => {
-      console.log(err);
       mng.close();
+      res.json({ ok: false, error: err.toString() });
     });
 });
 

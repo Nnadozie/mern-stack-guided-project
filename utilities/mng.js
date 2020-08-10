@@ -30,6 +30,7 @@ async function connect() {
       useUnifiedTopology: true
     });
     connObj.db = connObj.client.db(DBNAME);
+    await getCollectionsNames();
   }
   catch (err) {
     console.error(err);
@@ -44,15 +45,19 @@ async function close() {
 }
 
 /**
+ * Find collections names in the opened mongodb database
+ */
+async function getCollectionsNames() {
+  connObj.collections = (await connObj.db.listCollections().toArray())
+    .map(coll => coll['name']);
+}
+
+/**
  * Return true if the mongodb contains the provided collection
  * 
  * @param {string} collName 
  */
 async function hasCollection(collName) {
-  if (!connObj.collections) {
-    connObj.collections = (await connObj.db.listCollections().toArray())
-      .map(coll => coll['name']);
-  }
   return connObj.collections.includes(collName);
 }
 
@@ -91,8 +96,8 @@ const importJson = async () => {
 };
 
 module.exports = {
-  importJson, 
-  connect, 
+  importJson,
+  connect,
   close,
   hasCollection,
   connObj

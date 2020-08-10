@@ -1,19 +1,33 @@
-const selectNodes = (parent, type) => {
-    const keys = Object.keys(parent);
+/**
+ * Extract the 'key' attribute from the object 'jsonObj'
+ * @param {json} jsonObj 
+ * @param {text} key 
+ */
+const selectNodes = (jsonObj, key) => {
+    const keys = Object.keys(jsonObj);
     const newObj = {};
-    if (keys.includes(type) && (typeof parent[type] === 'string' || Array.isArray(parent[type]))) {
-        newObj[type] = parent[type];
+    if (keys.includes(key) && (typeof jsonObj[key] === 'string' || Array.isArray(jsonObj[key]))) {
+        newObj[key] = jsonObj[key];
     } else {
-        if (typeof parent === 'object') {
-            keys.forEach(key => {
-                newObj[key] = selectNodes(parent[key], type);
+        if (typeof jsonObj === 'object') {
+            keys.forEach(k => {
+                newObj[k] = selectNodes(jsonObj[k], key);
             });
         }
     }
     return newObj;
 }
 
-module.exports = selectLanguage = (textObj, language) => {
-    const langObject = selectNodes(textObj, language);
-    return langObject;
+/**
+ * Extract only one language from a json object containing many languages
+ * @param {json} textObj 
+ * @param {string} language 
+ */
+const selectLanguage = (textObj, language) => {
+    if (textObj === null) {
+        return null;
+    }
+    return selectNodes(textObj, language);
 };
+
+module.exports = selectLanguage;
