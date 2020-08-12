@@ -179,10 +179,24 @@ Checking that the resources were correctly created.
 
 It's front-end time! Here's where things get exciting ^_^, and also a good time to start brushing up on your CSS!
 
-* Create a view in your express app using a template engine of your choice. I recommend [EJS](https://ejs.co/).
-* Let it display any valid html of your choice on localhost:8080/
+* Create a react-app or an angular-app and get it running on localhost:8081 or any other port of your choice.
+* It should display any valid html/css of your choice. I recommend a simple "hello world, my name is <name>"
 
-Recommended course: Sections 1 to 4 of "Building Web Applications with Node.js and Express 4.0 (UPDATE)" https://app.pluralsight.com/library/courses/c76a348d-4fa2-4925-ae8c-d66edba14b75
+Recommended
+* For react: [getting-started-with-react](https://www.taniarascia.com/getting-started-with-react/)
+* If you choose Angular: [Angular Fundamentals sections 1-4](https://app.pluralsight.com/library/courses/angular-fundamentals/table-of-contents)
+
+Interesting reads
+* [Web Architecture 101](https://engineering.videoblocks.com/web-architecture-101-a3224e126947)
+* [FullStack Development with M.E.R.N Stack: Part 1](https://levelup.gitconnected.com/a-complete-guide-build-a-scalable-3-tier-architecture-with-mern-stack-es6-ca129d7df805)
+* [I built a M.E.R.N codebase in an hour](https://levelup.gitconnected.com/i-built-a-m-e-r-n-codebase-in-an-hour-742acd71ed7e)
+
+
+~~* Create a view in your express app using a template engine of your choice. I recommend [EJS](https://ejs.co/). ~~
+
+~~* Let it display any valid html of your choice on localhost:8081/ ~~
+
+~~Recommended course: Sections 1 to 4 of "Building Web Applications with Node.js and Express 4.0 (UPDATE)" https://app.pluralsight.com/library/courses/c76a348d-4fa2-4925-ae8c-d66edba14b75 ~~
 
 <br><br><br>
 
