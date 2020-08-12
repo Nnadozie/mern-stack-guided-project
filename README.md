@@ -191,13 +191,6 @@ Interesting reads
 * [FullStack Development with M.E.R.N Stack: Part 1](https://levelup.gitconnected.com/a-complete-guide-build-a-scalable-3-tier-architecture-with-mern-stack-es6-ca129d7df805)
 * [I built a M.E.R.N codebase in an hour](https://levelup.gitconnected.com/i-built-a-m-e-r-n-codebase-in-an-hour-742acd71ed7e)
 
-
-~~* Create a view in your express app using a template engine of your choice. I recommend [EJS](https://ejs.co/). ~~
-
-~~* Let it display any valid html of your choice on localhost:8081/ ~~
-
-~~Recommended course: Sections 1 to 4 of "Building Web Applications with Node.js and Express 4.0 (UPDATE)" https://app.pluralsight.com/library/courses/c76a348d-4fa2-4925-ae8c-d66edba14b75 ~~
-
 <br><br><br>
 
 ### Challenge 5 (Rating: Medium)
