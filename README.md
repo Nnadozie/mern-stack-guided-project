@@ -141,10 +141,10 @@ After challenge 3 we'll be moving on to front-end work!
 
 <br><br><br>
 
-### Challenge 3 Example Solution
+### Challenge 3 Example Solutions
 
 * Try not to peep till you've attempted the challenge.
-* View or download on the [challenge-3 branch](https://github.com/Nnadozie/express-nodemon-starter/tree/challenge-3).
+* Two examples provided for this challenge. View or download on the [challenge-3 branch](https://github.com/Nnadozie/express-nodemon-starter/tree/challenge-3), and [challenge-3.1 branch](https://github.com/Nnadozie/express-nodemon-starter/tree/challenge-3.1) (where [@manimanis](https://github.com/manimanis) builds on challenge-3 to provide imports from the language text file).
 * Deployed here to tinker with: https://uber-clone-c3.herokuapp.com/intl Check out the endpoints: /jp/ja, and /ng/en. They should be the same as challenge 2.
 * There's a new endpoint /intl, that takes over from /.
 * Can you run it locally and send a put request to /intl with your textfile content as the payload using postman?
