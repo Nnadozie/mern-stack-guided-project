@@ -1,73 +1,62 @@
 const express = require('express');
-const { MongoClient } = require('mongodb');
+const { MongoClient, connect } = require('mongodb');
 const selectLanguage = require('./utilities/selectLanguage');
+const mng = require('./utilities/mng');
+
+
+// Uncomment the following line to import data to the mongodb database
+// (() => { mng.importJson(); })();
 
 
 const app = express();
 const port = process.env.PORT || 3000;
-const url = "mongodb://localhost:27017";
-const dbName = 'uberCloneDb';
-
+const { URL, DBNAME } = require('./utilities/dbSettings');
 
 
 app.use(express.json());
-app.put('/:collection', (req, res) => {
-    const payload = req.body;
-    const { collection } = req.params;
-
-    (async function mongo() {
-        let client = new MongoClient(url, { useNewUrlParser: true });
-        try {
-            client = MongoClient.connect(url);
-            const db = (await client).db(dbName);
-            const col = await db.collection(collection.toString());
-            await col.deleteMany();
-            const response = await col.insertOne(payload);
-            res.status(201).json(response)
-        } catch (error) {
-            res.send(error);
-        }
-        (await client).close();
-    })();
-});
 
 app.get('/:collection', (req, res) => {
-    const {collection} = req.params;
+  const { collection } = req.params;
 
-    (async function mongo() {
-        let client = new MongoClient(url, { useNewUrlParser: true });
-        try {
-            client = MongoClient.connect(url);
-            const db = (await client).db(dbName);
-            const col = await db.collection(collection.toString());
-            const text = await col.findOne()
-            res.json(text);
-        } catch (error) {
-            res.send(error);
-        }
-        (await client).close();
-    })();
+  mng.connect()
+    .then(() => {
+      // User can only fetch from existing collections
+      if (mng.connObj.collections.includes(collection)) {
+        return collection;
+      }
+      throw new Error(`There is no '${collection}' collection found.`);
+    })
+    .then(collection => mng.connObj.db.collection(collection))
+    .then(col => col.findOne())
+    .then(text => res.json(text))
+    .catch(err => {
+      mng.close();
+      res.json({ ok: false, error: err.toString() });
+    });
 });
 
 app.get('/:collection/:language', (req, res) => {
-    const { collection, language } = req.params;
+  const { collection, language } = req.params;
 
-    (async function mongo() {
-        let client = new MongoClient(url, { useNewUrlParser: true });
-        try {
-            client = MongoClient.connect(url);
-            const db = (await client).db(dbName);
-            const col = await db.collection(collection.toString());
-            const text = await col.findOne()
-            res.json(selectLanguage(text, language))
-        } catch (error) {
-            res.send(error);
-            console.log(error);
-        }
-        (await client).close();
-    })();
+  mng.connect()
+    .then(() => {
+      console.log(mng.connObj.collections);
+      // User can only fetch from existing collections
+      if (mng.connObj.collections.includes(collection)) {
+        return collection;
+      }
+      throw new Error(`There is no '${collection}' collection found.`);
+    })
+    .then(collection => mng.connObj.db.collection(collection))
+    .then(col => col.findOne())
+    .then(text => selectLanguage(text, language))
+    .then(text => res.json(text))
+    .catch(err => {
+      mng.close();
+      res.json({ ok: false, error: err.toString() });
+    });
 });
 
 app.listen(port, () => {
-    console.log(`listening on port ${port}`)
+  console.log(`listening on port ${port}`)
 });
