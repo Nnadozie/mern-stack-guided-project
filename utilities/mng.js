@@ -15,7 +15,7 @@ const connObj = {
 async function connect() {
   // if we are already connected 
   // no need to reconnect
-  if (connObj.client && connObj.db) {
+  if (connObj.client && connObj.db && connObj.client.isConnected()) {
     return;
   }
 
@@ -83,7 +83,7 @@ const importJson = async () => {
   }
   exists = await hasCollection('jp');
   if (!exists) {
-    console.log('creates ja collection');
+    console.log('creates jp collection');
     await mongoImport('jp', selectLanguage(textObj, 'ja'));
   }
   exists = await hasCollection('ng');

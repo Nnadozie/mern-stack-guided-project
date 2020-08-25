@@ -5,7 +5,7 @@ const mng = require('./utilities/mng');
 
 
 // Uncomment the following line to import data to the mongodb database
-// (() => { mng.importJson(); })();
+(() => { mng.importJson(); })();
 
 
 const app = express();
@@ -30,7 +30,7 @@ app.get('/:collection', (req, res) => {
     .then(col => col.findOne())
     .then(text => res.json(text))
     .catch(err => {
-      mng.close();
+      (mng && mng.close());
       res.json({ ok: false, error: err.toString() });
     });
 });
@@ -52,7 +52,7 @@ app.get('/:collection/:language', (req, res) => {
     .then(text => selectLanguage(text, language))
     .then(text => res.json(text))
     .catch(err => {
-      mng.close();
+      (mng && mng.close());
       res.json({ ok: false, error: err.toString() });
     });
 });
