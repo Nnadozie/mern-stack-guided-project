@@ -183,8 +183,11 @@ It's front-end time! Here's where things get exciting ^_^, and also a good time 
 * It should display any valid html/css of your choice. I recommend a simple "hello world, my name is <name>"
 
 Recommended
-* For react: [getting-started-with-react](https://www.taniarascia.com/getting-started-with-react/)
-* If you choose Angular: [Angular Fundamentals sections 1-4](https://app.pluralsight.com/library/courses/angular-fundamentals/table-of-contents)
+* For react: [getting-started-with-react](https://www.taniarascia.com/getting-started-with-react/), [create-react-app advanced configuration](https://create-react-app.dev/docs/advanced-configuration)
+* If you choose Angular: [Angular Fundamentals sections 1-2](https://app.pluralsight.com/library/courses/angular-fundamentals/table-of-contents), [Angular Workspace Configuration](https://angular.io/guide/workspace-config)
+
+Why do this challenge?
+* The idea behind this challenge is to get you to read the react/angular docs, by asking you to configure your port. Sure, you'll easily find out how to do this on Stackoverflow, but if you can challenge yourself to figure it out using their docs, then you've learned a transferable skill.
 
 Interesting reads
 * [Web Architecture 101](https://engineering.videoblocks.com/web-architecture-101-a3224e126947)
@@ -192,6 +195,8 @@ Interesting reads
 * [I built a M.E.R.N codebase in an hour](https://levelup.gitconnected.com/i-built-a-m-e-r-n-codebase-in-an-hour-742acd71ed7e)
 
 <br><br><br>
+
+### Challenge 4 Example
 
 ### Challenge 5 (Rating: Medium)
 Loading...
