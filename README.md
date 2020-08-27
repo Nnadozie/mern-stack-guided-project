@@ -56,7 +56,7 @@ Set up an express node app.
 Expectations
 
 
-* Can access the app from localhost:8080/
+* Can access the app in development mode from localhost:8080/
 * App can automatically refresh when code changes are made, using nodemon.
 
 * Please share progress of your work on our slack team channel
@@ -179,7 +179,7 @@ Checking that the resources were correctly created.
 
 It's front-end time! Here's where things get exciting ^_^, and also a good time to start brushing up on your CSS!
 
-* Create a react-app or an angular-app and get it running on localhost:8081 or any other port of your choice.
+* Create a react-app or an angular-app and get it running in development mode on localhost:8081 or any other port of your choice.
 * It should display any valid html/css of your choice. I recommend a simple "hello world, my name is <name>"
   
 Why do this challenge?
