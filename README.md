@@ -1,12 +1,12 @@
 This is the backend repo for a GADS guided project supported by [@manimanis](https://github.com/manimanis) and [@nnadozie](https://github.com/Nnadozie), and open to more example solutions and course recommendations from mentors.
 
-By the end of challenge 3 you should have these endpoints and/or similar ones up and running:
+By the end of challenge 3 you should have these endpoints and/or similar ones up and running using express and mongodb/postgress:
 
 * [/intl](https://uber-clone-c3.herokuapp.com/intl)
 * [/intl/en](https://uber-clone-c3.herokuapp.com/intl/en)
 * [/intl/ja](https://uber-clone-c3.herokuapp.com/intl/ja)
-* [/jp/ja](https://uber-clone-c3.herokuapp.com/intl/jp/ja)
-* [/ng/en](https://uber-clone-c3.herokuapp.com/intl/en)
+* [/jp/ja](https://uber-clone-c3.herokuapp.com/jp/ja)
+* [/ng/en](https://uber-clone-c3.herokuapp.com/ng/en)
 <br></br>
 
 ![Uber Clone](https://media.giphy.com/media/iDgizRDKB7Ghgdlbb1/giphy.gif)
