@@ -1,4 +1,13 @@
-This is a GADS guided project supported by [@manimanis](https://github.com/manimanis) and [@nnadozie](https://github.com/Nnadozie), and open to more example solutions and course recommendations from mentors.
+This is the backend repo for a GADS guided project supported by [@manimanis](https://github.com/manimanis) and [@nnadozie](https://github.com/Nnadozie), and open to more example solutions and course recommendations from mentors.
+
+By the end of challenge 3 you should have these endpoints and/or similar ones up and running:
+
+* [/intl](https://uber-clone-c3.herokuapp.com/intl)
+* [/intl/en](https://uber-clone-c3.herokuapp.com/intl/en)
+* [/intl/ja](https://uber-clone-c3.herokuapp.com/intl/ja)
+* [/jp/ja](https://uber-clone-c3.herokuapp.com/intl/jp/ja)
+* [/ng/en](https://uber-clone-c3.herokuapp.com/intl/en)
+<br></br>
 
 ![Uber Clone](https://media.giphy.com/media/iDgizRDKB7Ghgdlbb1/giphy.gif)
 
@@ -42,7 +51,6 @@ Here's what to expect:
 There'll be personally reviewed recommended courses that help guide you along. You can expect that we'd have done these courses to assess them before recommending.
 
 <br><br><br>
-
 
 
 ### CHALLENGE 1 (Rating: Easy)
